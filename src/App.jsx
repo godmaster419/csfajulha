@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+const IMAGE_BASE = `${import.meta.env.BASE_URL}images/`
 
 const teachers = [
   { name: 'Mr. Kailash Nath', role: 'Assistant Teacher', shortRole: 'AT' },
@@ -201,61 +202,17 @@ const sports = [
 ]
 
 const gallery = [
-  {
-    src: '/images/school-building.jpeg',
-    title: 'School Building',
-    alt: 'Composite School Fajulha school building',
-  },
-  {
-    src: '/images/classroom-activity.jpeg',
-    title: 'Classroom Activity',
-    alt: 'Students participating in a classroom activity',
-  },
-  {
-    src: '/images/certificate-1.jpeg',
-    title: 'Student Achievement',
-    alt: 'Student receiving a certificate at school',
-  },
-  {
-    src: '/images/certificate-2.jpeg',
-    title: 'Student Recognition',
-    alt: 'Student receiving recognition from school staff',
-  },
-  {
-    src: '/images/certificate-3.jpeg',
-    title: 'Academic Recognition',
-    alt: 'Student receiving an academic certificate',
-  },
-  {
-    src: '/images/midday-meal-cooking.jpeg',
-    title: 'Mid-Day Meal Preparation',
-    alt: 'School meal being prepared on campus',
-  },
-  {
-    src: '/images/midday-meal.jpeg',
-    title: 'Mid-Day Meal',
-    alt: 'School meal preparation activity',
-  },
-  {
-    src: '/images/campus-life.jpeg',
-    title: 'Campus Life',
-    alt: 'Students and staff participating in campus activities',
-  },
-  {
-    src: '/images/students-campus.jpeg',
-    title: 'Students on Campus',
-    alt: 'Students gathered on the school campus',
-  },
-  {
-    src: '/images/school-team-work.jpeg',
-    title: 'School Team',
-    alt: 'School staff working together on school activities',
-  },
-  {
-    src: '/images/school-staff.jpeg',
-    title: 'School Community',
-    alt: 'School community activity',
-  },
+  { src: `${IMAGE_BASE}school-building.jpeg`, title: 'School Building', alt: 'Composite School Fajulha school building' },
+  { src: `${IMAGE_BASE}classroom-activity.jpeg`, title: 'Classroom Activity', alt: 'Students participating in a classroom activity' },
+  { src: `${IMAGE_BASE}certificate-1.jpeg`, title: 'Student Achievement', alt: 'Student receiving a certificate at school' },
+  { src: `${IMAGE_BASE}certificate-2.jpeg`, title: 'Student Recognition', alt: 'Student receiving recognition from school staff' },
+  { src: `${IMAGE_BASE}certificate-3.jpeg`, title: 'Academic Recognition', alt: 'Student receiving an academic certificate' },
+  { src: `${IMAGE_BASE}midday-meal-cooking.jpeg`, title: 'Mid-Day Meal Preparation', alt: 'School meal being prepared on campus' },
+  { src: `${IMAGE_BASE}midday-meal.jpeg`, title: 'Mid-Day Meal', alt: 'School meal preparation activity' },
+  { src: `${IMAGE_BASE}campus-life.jpeg`, title: 'Campus Life', alt: 'Students and staff participating in campus activities' },
+  { src: `${IMAGE_BASE}students-campus.jpeg`, title: 'Students on Campus', alt: 'Students gathered on the school campus' },
+  { src: `${IMAGE_BASE}school-team-work.jpeg`, title: 'School Team', alt: 'School staff working together on school activities' },
+  { src: `${IMAGE_BASE}school-staff.jpeg`, title: 'School Community', alt: 'School community activity' },
 ]
 
 const studyClasses = [
@@ -382,7 +339,7 @@ function App() {
           >
             <div className="brand-logo image-logo">
               <img
-                src="/images/school-logo.png"
+                src={`${IMAGE_BASE}school-logo.png`}
                 alt="Composite School Fajulha logo"
               />
             </div>
@@ -512,7 +469,7 @@ function App() {
 
               <div className="school-emblem">
                 <img
-                  src="/images/school-logo.png"
+                  src={`${IMAGE_BASE}school-logo.png`}
                   alt="Composite School Fajulha logo"
                 />
               </div>
@@ -650,7 +607,7 @@ function App() {
               <div className="about-photo">
 
                 <img
-                  src="/images/school-building.jpeg"
+                  src={`${IMAGE_BASE}school-building.jpeg`}
                   alt="Composite School Fajulha building"
                 />
 
@@ -1375,10 +1332,9 @@ function App() {
                 <div className="brand-logo image-logo">
 
                   <img
-                    src="/images/school-logo.png"
-                    alt="Composite School Fajulha logo"
-                  />
-
+  src={`${IMAGE_BASE}school-logo.png`}
+  alt="Composite School Fajulha logo"
+/>
                 </div>
 
                 <div>
