@@ -1332,9 +1332,10 @@ function App() {
                 <div className="brand-logo image-logo">
 
                   <img
-  src={`${IMAGE_BASE}school-logo.png`}
-  alt="Composite School Fajulha logo"
-/>
+                    src={`${IMAGE_BASE}school-logo.png`}
+                    alt="Composite School Fajulha logo"
+                  />
+
                 </div>
 
                 <div>
@@ -1348,7 +1349,7 @@ function App() {
                   </span>
 
                 </div>
-</div>
+
               </div>
 
             </div>
@@ -1433,6 +1434,7 @@ function App() {
 
               </div>
 
+            </div>
 
           </div>
 
